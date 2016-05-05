@@ -8,7 +8,7 @@ import spider
 def getLocation(address):
     url = 'http://api.map.baidu.com/geocoder/v2/'
     output = 'json'
-    ak = ''
+    ak = 'hpX9BN94G7wEQDOvrdjoDSaKoMN8eiBR'
     uri = url + '?' + 'address=' + address + '&output=' + output + '&ak=' + ak
     temp = urllib2.urlopen(uri)
     temp = json.loads(temp.read())

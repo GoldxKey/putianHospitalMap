@@ -18,7 +18,7 @@ def getLocation(address):
 
 
 def insertLocationToDatabase():
-    names = spider.returnHospisalName()
+    names = spider.returnHospitalName()
 
     db = MySQLdb.connect("localhost","root","","putianhospital",charset='utf8' )
 

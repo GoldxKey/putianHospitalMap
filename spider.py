@@ -14,7 +14,7 @@ def downTheHTML(url):
     html = resp.read()
     return html
 
-def returnHospisalName():
+def returnHospitalName():
     url = u"http://news.ifeng.com/mainland/special/ptxyy/"
     html = downTheHTML(url)
     html = html[html.find("var hospitals = [")+len("var hospitals = [")+1:]
